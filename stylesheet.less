@@ -45,13 +45,16 @@
     width: 100%;
 }
 
-.template-content .widget:first-child {
-    padding-top: 40px;
-    @media @tablet {
-        padding-top: 30px;
-    }
-    @media @mobile {
-        padding-top: 20px;
+.template-content {
+    .widget:first-child,
+    .widget:last-child {
+        padding-top: 40px;
+        @media @tablet {
+            padding-top: 30px;
+        }
+        @media @mobile {
+            padding-top: 20px;
+        }
     }
 }
 
