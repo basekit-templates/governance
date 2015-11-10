@@ -5,25 +5,25 @@
 // Profile Widget
 // --------------
 
-.address {
-    .address-line {
-        padding-bottom: 0;
-        @media only screen and (min-width : 770px) {
-            display: inline-block;
-            padding-right: 5px;
-            &:after {
-                content: "\002C";
-            }
+// Address
+.address-line {
+    padding-bottom: 0;
+    @media only screen and (min-width : 770px) {
+        display: inline-block;
+        padding-right: 5px;
+        &:after {
+            content: "\002C";
         }
     }
-    .address-line:last-child:after {
-        content: '';
-    }
-    @media @tablet {
-        text-align: center;
-    }
+}
+.address-line:last-child:after {
+    content: '';
 }
 
+
+
+
+// Header Top Bar & Footer Bottom Bar
 .header-top-bar,
 .footer-bottom-bar {
 
@@ -63,6 +63,13 @@
     .signupform .label {
         color: @color-swatch1;
         font-weight: 400;
+    }
+
+    // Address
+    .address {
+        @media @tablet {
+            text-align: center;
+        }
     }
 
 }
