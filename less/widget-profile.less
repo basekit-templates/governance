@@ -21,8 +21,23 @@
 }
 
 // Remove bottom padding from text
-.flex-container-vertical,
-.template-footer {
+.profile {
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    a,
+    .address-line {
+        padding-bottom: 0;
+    }
+}
+
+// Header Top Bar & Footer Bottom Bar
+.header-top-bar,
+.footer-bottom-bar {
+
+    // Text
     .profile {
         h1,
         h2,
@@ -31,16 +46,10 @@
         p,
         a,
         .address-line {
-            padding-bottom: 0;
             color: @color-swatch1;
             font-weight: 400;
         }
     }
-}
-
-// Header Top Bar & Footer Bottom Bar
-.header-top-bar,
-.footer-bottom-bar {
 
     // Twitter
     .twitter__avatar-image {
