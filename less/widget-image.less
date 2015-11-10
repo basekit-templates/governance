@@ -1,0 +1,97 @@
+// Baked images in homepage
+
+.homepage-images-background {
+    width: 100%;
+    padding: 40px 0 60px;
+}
+
+.homepage-images-container {
+    padding-top: 0;
+}
+
+.homepage-images-flex {
+    @media only screen and (min-width: 700px) {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-align-content: space-around;
+        -ms-flex-line-pack: distribute;
+        align-content: space-around;
+        -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        margin: 0 -20px;
+    }
+    .figure {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-align-content: space-around;
+        -ms-flex-line-pack: distribute;
+        align-content: space-around;
+        -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        width: 100%;
+        a,
+        .caption {
+            -webkit-flex: 1 1 auto;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            width: 100%;
+        }
+        a {
+            -webkit-order: 1;
+            -ms-flex-order: 1;
+            order: 1;
+            -webkit-flex: 0 0 50%;
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+        }
+        .image {
+            max-height: 293px;
+        }
+    }
+}
+
+.homepage-images-flex .widget {
+    @media only screen and (min-width: 600px) {
+        -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        margin: 0 20px;
+        width: 100%;
+    }
+}
+
+.image-title,
+.image-description {
+    color: @color-swatch5;
+}
+
+.image-title {
+    font-family:@font-swatch3-font-family;
+    font-size:@font-swatch3-font-size;
+    font-weight: @font-swatch3-font-weight;
+    line-height:@font-swatch3-line-height;
+    color: @font-swatch3-color;
+    letter-spacing: @font-swatch3-letter-spacing;
+}

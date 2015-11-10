@@ -1,0 +1,22 @@
+<div class="template-footer">
+    <div class="footer-top-bar">
+        {{widget('signupform', 'footersignup', {'text': 'Send', 'label': 'JOIN THE PARTY TODAY AND HELP SUPPORT US:', 'formTitle': 'Signup Form', 'email': 'profile'})|raw}}
+    </div>
+
+
+    <div class="flex-container-horizontal footer-bottom-bar">
+        <div class="flex-item flex-profile-one">
+            {{widget('profile', 'footercopyright', {
+                'profileType':'copyright',
+                'copyright':'profile'
+            })|raw}}
+        </div>
+        <div class="flex-item flex-profile-two">
+            {{widget('profile', 'footeremail', {
+                'profileType':'email',
+                'email':'profile'
+            })|raw}}
+        </div>
+    </div>
+
+</div>

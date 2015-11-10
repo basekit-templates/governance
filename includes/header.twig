@@ -1,0 +1,44 @@
+<!-- Template Widgets -->
+
+<div class="flex-container-vertical">
+
+    <div class="flex-container-horizontal header-top-bar flex-item-vertical-one">
+        <div class="flex-item flex-profile-one">
+            {{widget('profile', 'headeremail', {
+                'profileType':'email',
+                'email':'profile'
+            })|raw}}
+        </div>
+        <div class="flex-item flex-profile-two">
+            {{widget('profile', 'headeraddress', {
+                'profileType':'address',
+                'address':'profile'
+            })|raw}}
+        </div>
+    </div>
+
+    <div class="flex-container-horizontal header-bottom-bar flex-item-vertical-two">
+
+        <div class="flex-item flex-profile">
+            {{widget('profile', 'headersocialicons', {
+                'profileType':'socialicons',
+                'socialicons':'profile'
+            })|raw}}
+        </div>
+        <div class="flex-item flex-nav">
+            {{widget('extendednavigation', 'navigation', {"align":"right"})|raw}}
+        </div>
+        <div class="flex-item flex-logo">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+        </div>
+        <div class="flex-item flex-companyname">
+            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+        </div>
+
+    </div>
+
+</div> <!-- End Flex Container Vertical -->
+
+<div class="default-header-bottom-line"></div>
+
+<!-- End Template Widgets -->

@@ -1,0 +1,46 @@
+//
+// Copyright 2014 BaseKit Platform Ltd
+//
+// ---------------------
+// BasePlate main styles
+// ---------------------
+
+// Template Imports
+// ----------------
+@import "@{templateCommon}/bk-less-framework.less";     // BK LESS Framework
+
+@import "@{templateLocal}/less/variables.less";         // Variables
+
+@import "@{templateLocal}/less/widget-gallery.less";    // Widgets
+@import "@{templateLocal}/less/widget-profile.less";
+@import "@{templateLocal}/less/widget-feature.less";
+@import "@{templateLocal}/less/widget-image.less";
+
+@import "@{templateLocal}/less/plugin-blog.less";       // Plugins
+@import "@{templateLocal}/less/plugin-menu.less";
+@import "@{templateLocal}/less/plugin-ecommerce.less";
+
+@import "@{templateLocal}/less/header-and-footer.less";
+@import "@{templateLocal}/less/forms-and-buttons.less";
+
+
+// Template Styles
+// ---------------
+
+// Wrapping container
+.template-content,
+.homepage-images-container,
+.feature__content-inner-wrap {
+    width: 90%;
+    margin: 0 5%;
+    @media only screen and (min-width: 1140px) {
+        width: 960px; // 1140px - 10% for margins
+        margin: 0 auto;
+    }
+}
+
+.container {
+    background-color: darken(@color-swatch1, 3%);
+    width: 100%;
+    padding: 20px 0;
+}

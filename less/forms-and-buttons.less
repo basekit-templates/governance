@@ -1,0 +1,180 @@
+//
+// Copyright 2014 BaseKit Platform Ltd
+//
+
+
+// Formatting all inputs and buttons so they match in size
+input, textarea, button, .button {
+    padding: 8px 20px;
+    line-height: @font-swatch7-line-height;
+}
+
+
+
+
+// ----------------------------
+// BUTTONS
+// ----------------------------
+
+button,
+.button {
+    min-height: 44px;
+    @media @mobile {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+// --------------
+// Forms
+// --------------
+
+input[type="search"],
+input[type="email"],
+input[type="password"],
+textarea,
+.input--single-line {
+    min-height: 44px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+}
+
+.contactform .legend,
+.signupform .label,
+.blogsearch .label {
+    font-family:@font-swatch3-font-family;
+    font-size:@font-swatch3-font-size;
+    font-weight: @font-swatch3-font-weight;
+    line-height:@font-swatch3-line-height;
+    color: @font-swatch3-color;
+    letter-spacing: @font-swatch3-letter-spacing;
+}
+
+
+
+
+// Contact Form
+// ------------
+
+.contactform {
+    .legend {
+        margin-bottom: 10px;
+    }
+    .form-body {
+        background-color: darken(@color-swatch1, 10%);
+        padding: 20px;
+    }
+    .input,
+    textarea {
+        border: none;
+    }
+}
+
+
+
+
+// Signup & Blog Search
+// --------------------
+
+.signupform,
+.blogsearch {
+    .form {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .form-body,
+    .form-group {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-align-items: flex-end;
+        -ms-flex-align: flex-end;
+        align-items: flex-end;
+    }
+    .fieldset {
+        @media @tablet {
+            width: 100%;
+        }
+    }
+    .form-group {
+        @media @tablet {
+            display: inline-block;
+        }
+        @media @mobile {
+            width: 100%;
+        }
+    }
+    .form-group:first-child {
+        -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+    }
+    .label {
+        -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        margin: 0 10px 7px 0;
+        text-align: right;
+        @media @tablet {
+            text-align: left;
+        }
+    }
+    .input {
+        -webkit-flex: 0 1 30%;
+        -ms-flex: 0 1 30%;
+        flex: 0 1 20%;
+        min-width: 200px;
+        @media @tablet {
+            min-width: inherit;
+            width: 100%;
+        }
+    }
+    .legend {
+        display: none;
+    }
+}
+
+.footer-top-bar {
+    .widget {
+        .input {
+            border: none;
+        }
+        @media @tablet {
+            width: 100%;
+        }
+    }
+    .form-group {
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,67 @@
+{% extends "layout.twig" %}
+{% block class %}bk-pt-home{% endblock %}
+{% block content %}
+
+    {{widget('feature', 'feature', {
+        "header": "profile",
+        "strapline": "profile",
+        "defaultBgImg": asset('images/feature.jpg'),
+        "positionTopPercentage": "50",
+        "showBtn": true,
+        "buttonText": "LOREM IPSUM"
+    })|raw}}
+
+    <div class="homepage-images-background">
+
+        <div class="homepage-images-container">
+
+            <div class="homepage-images-flex">
+
+                {{widget('image', 'image1', {
+                  'src': asset('images/image1.jpg'),
+                  'title': 'BIOGRAPHY',
+                  'description': 'The description text',
+                  'alt': 'The alternate text'
+                })|raw}}
+
+
+                {{widget('image', 'image2', {
+                  'src': asset('images/image2.jpg'),
+                  'title': 'VOLUNTEER',
+                  'description': 'The description text',
+                  'alt': 'The alternate text'
+                })|raw}}
+
+
+                {{widget('image', 'image3', {
+                  'src': asset('images/image3.jpg'),
+                  'title': 'ISSUES',
+                  'description': 'The description text',
+                  'alt': 'The alternate text'
+                })|raw}}
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Page Content -->
+        <section class="template-content">
+
+            <!-- Main Widget Zone -->
+            {{zone('main')|raw}}
+
+        </section>
+        <!-- End Page Content -->
+
+    </div>
+    <!-- End Container -->
+
+{% endblock %}
+
+
+
