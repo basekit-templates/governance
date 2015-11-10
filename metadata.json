@@ -57,7 +57,7 @@
             "font-family": "\"Helvetica\", Arial, sans-serif",
             "font-size": "15px",
             "font-weight": "inherit",
-            "line-height": "28px",
+            "line-height": "25px",
             "color": "@color-swatch5",
             "letter-spacing": "inherit"
         },
