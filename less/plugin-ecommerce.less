@@ -142,7 +142,6 @@
 
 .listing-title {
     padding: 0 0 1.8em;
-    color: @color-swatch5;
 }
 
 // Product Filter
@@ -299,18 +298,14 @@
 .columns-four-second,
 .columns-four-third,
 .columns-four-fourth {
-    legend {
-        padding: 20px 30px;
-        @media @mobile {
-            padding: 20px;
-        }
-    }
     .ecomproductslist__form-body  {
         display: block;
-        padding: 20px 30px;
-        @media @mobile {
-            padding: 20px;
-        }
+    }
+    .product-filters .form-group {
+        width: 100%;
+    }
+    .product-filters .input--search {
+        margin-bottom: 10px;
     }
     .form .button {
         &.ecomproductslist__button {
@@ -319,7 +314,6 @@
         }
     }
 }
-
 
 
 
