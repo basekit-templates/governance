@@ -46,14 +46,22 @@
 }
 
 .template-content {
-    .widget:first-child,
-    .widget:last-child {
+    .widget:first-child {
         padding-top: 40px;
         @media @tablet {
             padding-top: 30px;
         }
         @media @mobile {
             padding-top: 20px;
+        }
+    }
+    .widget:last-child {
+        padding-bottom: 40px;
+        @media @tablet {
+            padding-bottom: 30px;
+        }
+        @media @mobile {
+            padding-bottom: 20px;
         }
     }
 }
