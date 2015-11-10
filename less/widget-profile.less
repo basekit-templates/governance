@@ -26,9 +26,39 @@
 
 .header-top-bar,
 .footer-bottom-bar {
-    .address-line,
+
+    // Remove bottom padding from text
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
     a,
-    p {
+    .address-line {
+        padding-bottom: 0;
         color: @color-swatch1;
     }
+
+    // Twitter
+    .twitter__avatar-image {
+        margin-bottom: 10px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border-radius: 100px;
+    }
+    .tweet-item {
+        @media @tablet {
+            text-align: center;
+        }
+    }
+    .tweet-content a {
+        text-decoration: underline;
+    }
+
+    // Signup Form
+    .signupform .label {
+        color: @color-swatch1;
+        font-weight: 400;
+    }
+
 }
