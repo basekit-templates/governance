@@ -43,9 +43,17 @@
 .container {
     background-color: darken(@color-swatch1, 3%);
     width: 100%;
-    padding: 20px 0;
 }
 
+.template-content .widget:first-child {
+    padding-top: 40px;
+    @media @tablet {
+        padding-top: 30px;
+    }
+    @media @mobile {
+        padding-top: 20px;
+    }
+}
 
 
 
