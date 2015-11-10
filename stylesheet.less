@@ -78,3 +78,51 @@ hr {
     margin-bottom: 18px;
     background-color: darken(@color-swatch1, 20%);
 }
+
+
+
+
+
+// -----------------------------
+// Twitter Feed
+// -----------------------------
+
+.tweet-item {
+    background-color: @color-swatch1;
+    border: 1px solid darken(@color-swatch1, 10%);
+    padding: 2em;
+    p {
+        padding-bottom: 0;
+    }
+    .avatar {
+        max-width: 17%;
+        margin-right: 2%;
+    }
+    .tweet-wrap {
+        max-width: 80%;
+    }
+    .avatar,
+    .tweet-wrap {
+        display: inline-block;
+        vertical-align: top;
+        @media @mobile {
+            max-width: 100%;
+            width: auto;
+            margin: 0 auto;
+        }
+    }
+    .account-link {
+        font-family: @font-swatch5-font-family;
+        font-size: @font-swatch4-font-size;
+        line-height: @font-swatch4-line-height;
+    }
+    .tweet-metadata {
+        font-size: 90%;
+        .timestamp, .via {
+            color: lighten(@color-swatch5, 15%)
+        }
+    }
+    .timestamp {
+        margin-right: 5px;
+    }
+}
