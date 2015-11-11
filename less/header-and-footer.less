@@ -105,6 +105,10 @@
     }
 }
 
+.header-bottom-bar {
+    background-color: @color-swatch7;
+}
+
 .header-bottom-bar .flex-profile .widget {
     @media @tablet {
         padding: 10px 0;
@@ -326,7 +330,7 @@
         }
         .social-link:before {
             color: @font-swatch7-background-color;
-            background-color: @color-swatch1;
+            background-color: @color-swatch7;
         }
         .social-link:hover:before {
             color: @color-swatch2;
@@ -381,7 +385,7 @@
         text-indent: 1000px;
         overflow: hidden;
         line-height: 0;
-        background-color: @color-swatch1;
+        background-color: @color-swatch7;
         &:before {
             content: '';
             position: absolute;
@@ -411,7 +415,7 @@
         }
     }
     &:hover {
-        background-color: @color-swatch1;
+        background-color: @color-swatch7;
         &:before {
             background: @color-swatch3;
             box-shadow: 0 7px 0 @color-swatch3;
@@ -426,7 +430,7 @@
 // Toggle Button Open State
 .open & {
     &.navigation-toggle {
-        background-color: @color-swatch1;
+        background-color: @color-swatch7;
         &:before {
             width: 26px;
             margin-top: 21px;
@@ -493,28 +497,28 @@
 .extendednavigation,
 .navigation-list--children {
     @media @tablet {
-        border-top: 1px solid darken(@color-swatch1, 15%);
+        border-top: 1px solid darken(@color-swatch7, 15%);
     }
 }
 .navigation-list.open {
     @media @tablet {
-        border-bottom: 1px solid darken(@color-swatch1, 15%);
+        border-bottom: 1px solid darken(@color-swatch7, 15%);
     }
 }
 .navigation-list--children {
     left: inherit;
     right: 0;
     white-space: normal;
-    border: 1px solid darken(@color-swatch1, 15%);
+    border: 1px solid darken(@color-swatch7, 15%);
     @media @tablet {
-        border-top: 1px solid darken(@color-swatch1, 15%);
-        border-bottom: 1px solid darken(@color-swatch1, 15%);
+        border-top: 1px solid darken(@color-swatch7, 15%);
+        border-bottom: 1px solid darken(@color-swatch7, 15%);
         border-right: none;
         border-left: none;
     }
     .navigation-item--child {
         @media only screen and (min-width:770px) {
-            border-bottom: 1px solid darken(@color-swatch1, 15%);
+            border-bottom: 1px solid darken(@color-swatch7, 15%);
             &:last-child {
                 border-bottom: none;
             }
@@ -618,7 +622,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     padding: 40px 5%;
-    background-color: darken(@color-swatch1, 10%);
+    background-color: darken(@color-swatch7, 10%);
     .form-group {
         margin-bottom: 0;
     }
