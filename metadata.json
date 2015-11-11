@@ -1,6 +1,7 @@
 {
     "name": "Governance",
-    "thumbnail": "baseplate.png",
+    "thumbnail": "governance.png",
+    "screenshot": "governance-screenshot.jpg",
     "widgetVersion":2,
     "images": [
         "images/feature.jpg",
