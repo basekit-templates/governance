@@ -41,7 +41,7 @@
 }
 
 .flex-container-horizontal {
-    padding: 20px 5% 10px;
+    padding: 10px 5% 0;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -90,7 +90,6 @@
     align-content: space-between;
     background-color: @color-swatch2;
     @media @tablet {
-        padding: 10px 0;
         .widget {
             padding: 10px 5%;
             width: 100%;
@@ -102,6 +101,20 @@
         @media @tablet {
             width: 100%;
         }
+    }
+}
+
+.flex-container-horizontal.header-top-bar .flex-profile-two .widget {
+    @media @tablet {
+        border-top: 1px solid lighten(@color-swatch2, 10%);
+        padding: 20px 0;
+    }
+}
+
+
+.flex-container-horizontal.footer-bottom-bar {
+    @media @tablet {
+        padding: 10px 0;
     }
 }
 
@@ -235,8 +248,25 @@
         line-height: 0;
     }
     @media @tablet {
-        text-align: center;
-        padding: 15px 0;
+        width: 50%;
+        .facebooklike {
+            padding-top: 4px;
+        }
+    }
+}
+
+.flex-container-horizontal.header-top-bar {
+    .header-tweet,
+    .header-like {
+        .widget {
+            padding: 10px 5% 0;
+        }
+    }
+}
+
+.header-tweet {
+    @media @tablet {
+        float: right;
     }
 }
 
@@ -256,7 +286,10 @@
     }
     @media @tablet {
         .tweet {
-            text-align: center;
+            text-align: right;
+        }
+        .button {
+            width: auto;
         }
     }
 }
