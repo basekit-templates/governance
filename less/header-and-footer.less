@@ -259,7 +259,7 @@
     .header-tweet,
     .header-like {
         .widget {
-            padding: 10px 5% 0;
+            padding: 0;
         }
     }
 }
@@ -410,6 +410,9 @@
         .social-item {
             margin-right: 0;
         }
+        .social-link {
+            padding: 0;
+        }
     }
 }
 
@@ -483,6 +486,9 @@
             background: @color-swatch4;
             .transition( all, 0.5s, ease );
         }
+    }
+    @media @mobile {
+        top: -53px;
     }
     &:hover {
         background-color: @color-swatch7;
