@@ -20,10 +20,22 @@
     <div class="flex-container-horizontal header-bottom-bar flex-item-vertical-two">
 
         <div class="flex-item flex-profile">
-            {{widget('profile', 'headersocialicons', {
-                'profileType':'socialicons',
-                'socialicons':'profile'
+
+            {{widget('tweet', 'tweet', {
+              'linkText': 'Tweet',
+              'tweetText': 'Tweet',
+              'align': 'widget-align-right'
             })|raw}}
+
+        </div>
+        <div class="flex-item flex-profile">
+
+            {{widget('facebooklike', 'likebutton', {
+            text: 'FaceBook Like',
+            showFaces: 'false',
+            action: 'like'
+          })|raw}}
+
         </div>
         <div class="flex-item flex-nav">
             {{widget('extendednavigation', 'navigation', {"align":"right"})|raw}}
