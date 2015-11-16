@@ -4,10 +4,22 @@
 
     <div class="flex-container-horizontal header-top-bar flex-item-vertical-one">
         <div class="flex-item flex-profile-one">
-            {{widget('profile', 'headeremail', {
-                'profileType':'email',
-                'email':'profile'
-            })|raw}}
+            <div class="header-tweet">
+                {{widget('tweet', 'tweet', {
+                  'linkText': 'Tweet',
+                  'tweetText': 'Tweet',
+                  'align': 'widget-align-left'
+                })|raw}}
+            </div>
+            <div class="header-like">
+                {{widget('facebooklike', 'likebutton', {
+                    text: 'FaceBook Like',
+                    showFaces: 'false',
+                    action: 'like',
+                    colorscheme: 'light',
+                    layout: 'standard'
+                })|raw}}
+            </div>
         </div>
         <div class="flex-item flex-profile-two">
             {{widget('profile', 'headeraddress', {
@@ -20,22 +32,10 @@
     <div class="flex-container-horizontal header-bottom-bar flex-item-vertical-two">
 
         <div class="flex-item flex-profile">
-
-            {{widget('tweet', 'tweet', {
-              'linkText': 'Tweet',
-              'tweetText': 'Tweet',
-              'align': 'widget-align-right'
+            {{widget('profile', 'headersocialicons', {
+                'profileType':'socialicons',
+                'socialicons':'profile'
             })|raw}}
-
-        </div>
-        <div class="flex-item flex-profile">
-
-            {{widget('facebooklike', 'likebutton', {
-            text: 'FaceBook Like',
-            showFaces: 'false',
-            action: 'like'
-          })|raw}}
-
         </div>
         <div class="flex-item flex-nav">
             {{widget('extendednavigation', 'navigation', {"align":"right"})|raw}}

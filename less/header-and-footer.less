@@ -41,7 +41,7 @@
 }
 
 .flex-container-horizontal {
-    padding: 30px 5% 20px;
+    padding: 20px 5% 10px;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -223,7 +223,43 @@
     }
 }
 
+// --------------------------------
+// Header Top Bar - Tweet & FB Like
+// --------------------------------
 
+.header-tweet,
+.header-like {
+    @media only screen and (min-width : 770px) {
+        float: left;
+        padding: 11px 10px 0 0;
+        line-height: 0;
+    }
+    @media @tablet {
+        text-align: center;
+        padding: 15px 0;
+    }
+}
+
+.header-tweet {
+    .button {
+        position: relative;
+        height: 20px;
+        min-height: 20px;
+        line-height: 20px;
+        padding: 1px 7px;
+        color: #333;
+        cursor: pointer;
+        font: normal normal normal 11px/18px 'Helvetica Neue',Arial,sans-serif;
+        color: #ffffff;
+        background-color: #55acee;
+        border-radius: 3px;
+    }
+    @media @tablet {
+        .tweet {
+            text-align: center;
+        }
+    }
+}
 
 
 // ------------------
