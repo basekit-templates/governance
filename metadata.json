@@ -7,7 +7,7 @@
         "images/feature.jpg",
         "images/logo.png"
     ],
-    "pageTypes": ["home"],
+    "pageTypes":["home", "donate"],
     "colorSwatches":
     {
         "Swatch 1": {
